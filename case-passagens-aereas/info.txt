@@ -1,0 +1,17 @@
+Tipos de dados - Quais dados serão necessários para a aplicação funcionar.
+Contratos - Quasis são as informações obrigatórias e auxiliares.
+    ex. Aeroporto de saída
+        Aeroporto de chegada
+        Horário
+        Preço
+        Tipo
+        Comp.
+        Bagagem inclusa
+        Tempo de vôo
+        Número do vôo
+Gastos:
+    ex. Tempo de execução
+        Tempo de espera - Tempo que espera o site carregar.
+        Consumo de bytes
+        Ferramentas de AntiCaptcha
+        Armazenament de dados
