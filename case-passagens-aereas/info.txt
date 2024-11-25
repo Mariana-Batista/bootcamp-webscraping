@@ -1,5 +1,5 @@
 Tipos de dados - Quais dados serão necessários para a aplicação funcionar.
-Contratos - Quasis são as informações obrigatórias e auxiliares.
+Contratos - Quais são as informações obrigatórias e auxiliares.
     ex. Aeroporto de saída
         Aeroporto de chegada
         Horário
@@ -14,4 +14,4 @@ Gastos:
         Tempo de espera - Tempo que espera o site carregar.
         Consumo de bytes
         Ferramentas de AntiCaptcha
-        Armazenament de dados
+        Armazenamento de dados

@@ -5,7 +5,7 @@ from src.tools.redis import RedisClient
 class AbstractCrawler(ABC):
     
     def __init__(self):
-        self.redis = RedisClient.gewt()
+        self.redis = RedisClient.get()
     
     @abstractmethod
     def execute_main(self):
@@ -20,7 +20,17 @@ class AbstractCrawler(ABC):
         pass
     
     def get_step(self, key):
-        return self.redis.get(key)
+        
+        steps = None
+        
+        try:
+            steps = self.redis.get(key)
+        except:
+            print("Falha ao recuperar etapa do Redis.")
+        return steps
     
-    def save_data(self):
-        pass
+    def save_data(self, data):
+        try:
+            self.mongo.save_dataframes(data)
+        except:
+            print("Falha ao salvar dados no MongoDB.")
